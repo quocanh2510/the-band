@@ -9,21 +9,21 @@ html {
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* 
-1. từ ngoài vào trong
-2. từ trên xuống dưới
-3. tổng quan đến chi tiết
-*/
 
-
-/*
-1. vị trí
-2. kích thước (width, height)
-3. màu sắc
-4. kiểu dáng (kiểu chữ, hình tròn hình vuông,....)
-*/
-
-/* common */
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+  
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.4);
+}
+  
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
 
 .clear {
     clear: both;
@@ -88,14 +88,17 @@ html {
 }
 
 #header .mobile-menu-btn:hover {
+    transition: all 0.3s ease;
     background-color: #ccc;
 }
 
 #header .menu-icon:hover {
+    transition: all 0.3s ease;
     color: #000;
 }
 
 #header .search-button:hover {
+    transition: all 0.3s ease;
     background-color: #f44336;
     cursor: pointer;
 }
@@ -130,11 +133,13 @@ html {
 
 #nav .subnav li:hover ,
 #nav > li:hover > a {
+    transition: all 0.4s ease;
     background-color: #ccc;
     color: #000;
 }
 
 #nav li:hover .subnav {
+    transition: all 0.3s ease;
     display: block;
 }
 
@@ -186,10 +191,6 @@ html {
 #slider .text-description {
     font-weight: 600;
     font-size: 14px;
-}
-
-#content {
-
 }
 
 #content .content-section{
@@ -301,6 +302,7 @@ html {
 }
 
 .place-img:hover {
+    transition: all 0.3s ease;
     opacity: 0.5;
 }
 
@@ -337,6 +339,7 @@ html {
 }
 
 .btn:hover {
+    transition: all 0.3s ease;
     background-color: #ccc;
     color: #000;
     cursor: pointer;
@@ -391,6 +394,7 @@ html {
 }
 
 .modal-close:hover {
+    transition: all 0.3s ease;
     background-color: #ccc;
     color: #000;
 }
@@ -426,6 +430,7 @@ html {
 }
 
 #buy-tickets:hover {
+    transition: all 0.3s ease;
     opacity: 0.7;
 }
 
@@ -440,7 +445,7 @@ html {
 
 @keyframes modalFaceIn {
     from {
-        opacity: 0.4;
+        opacity: 0;
         transform: translateY(-140px);
     }
     to {
@@ -452,8 +457,8 @@ html {
 
 @keyframes fadeIn {
     from {
-        opacity: 0.4;
-        transform: translateX(-50px);
+        opacity: 0;
+        transform: translateY(-20px);
     }
     to {
         opacity: 1;
@@ -483,6 +488,7 @@ html {
 }
 
 .contact-info a:hover {
+    transition: all 0.3s ease;
     opacity: 1.2;
 }
 
@@ -506,6 +512,7 @@ html {
 }
 
 .form-submit-btn:hover {
+    transition: all 0.3s ease;
     cursor: pointer;
     background-color: #ccc;
     color: #000;
@@ -537,6 +544,7 @@ html {
 
 #footer .content-footer a:hover,
 #footer .icon-footer a:hover {
+    transition: all 0.3s ease;
     color: rgba(0, 0, 0, 0.4);
 }
 
